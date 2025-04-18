@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- full‑screen flex container to center -->
+  <div class="min-h-screen flex items-center justify-center bg-gray-50">
+    <!-- DaisyUI card as your bubble/box -->
+    <div class="card w-full max-w-md bg-base-100 shadow-xl rounded-lg p-6">
+      <form action="" method="post" class="space-y-4">
+        {% csrf_token %}
+
+        <!-- keep your table layout if you like -->
+        <table class="table-auto w-full">
+          {{ form.as_table }}
+        </table>
+
+        <!-- buttons -->
+        <div class="flex justify-end space-x-2">
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-primary"
+          />
+          <input
+            type="button"
+            onclick="window.location='{% url 'autos:make_list' %}'"
+            value="Cancel"
+            class="btn btn-secondary"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,305 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+
+
+<!-- Nav Bar-->
+<div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Homepage</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <a class="btn btn-ghost text-xl">Struggles 101</a>
+    </div>
+    <div class="navbar-end">
+      <button class="btn btn-ghost btn-circle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+      <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+          <span class="badge badge-xs badge-primary indicator-item"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+
+
+<!-- My Homepaget -->
+  <h1 class="text-4xl font-bold">*** Caleb's Homepage ***</h1>
+<ul class="list-disc list-inside">
+    <li class="text-2xl">
+        <a href="/hello" class="text-primary">Test the session</a>
+    </li> 
+</ul>
+
+
+
+<div class="flex justify-center">
+  <div class="stats stats-vertical lg:stats-horizontal shadow">
+    <div class="stat">
+      <div class="stat-title">Days without Zombies</div>
+      <div class="stat-value">12,045</div>
+      <div class="stat-desc">My life</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Potential Zombies</div>
+      <div class="stat-value">8 Billion</div>
+      <div class="stat-desc">↗︎ All the Peoples</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-title">Actual Zombies</div>
+      <div class="stat-value">0</div>
+      <div class="stat-desc">↘︎ Potential</div>
+    </div>
+  </div>
+</div>
+
+<!-- link to autos************************* -->
+<li><a href="/autos">Autos CRUD</a></li>
+
+<!-- persona 3 pic -->
+<div class="hero bg-base-300 py-20">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img
+        src="https://image.api.playstation.com/vulcan/ap/rnd/202307/2807/ac75989e7d6d6fddf7303b9b265f23d0c07b17b3c6d70d45.png"
+        class="max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <h1 class="text-5xl font-bold">Just Keep Swimming</h1>
+        <p class="py-6">
+          One day at a time, the river doesnt stop.
+          See the water below......
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- game pics -->
+  <div class="overflow-x-auto">
+    <table class="table">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <th>Name</th>
+          <th>System</th>
+          <th>Release Year</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- row 1 -->
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <td>
+            <div class="flex items-center gap-3">
+              <div class="avatar">
+                <div class="mask mask-squircle h-12 w-12">
+                  <img
+                    src="https://www.xenopedia.it/images/thumb/f/ff/Xenogears_US_cover.jpg/1200px-Xenogears_US_cover.jpg"
+                    alt="Avatar Tailwind CSS Component" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">Xenogears</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            Playstation
+            <br />
+            <span class="badge badge-ghost badge-sm">RPG</span>
+          </td>
+          <td>1998</td>
+          <th>
+            <button class="btn btn-ghost btn-xs">details</button>
+          </th>
+        </tr>
+        <!-- row 2 -->
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <td>
+            <div class="flex items-center gap-3">
+              <div class="avatar">
+                <div class="mask mask-squircle h-12 w-12">
+                  <img
+                    src="https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/76e7f89001953d5c767dd9b2722dcfca2a10b8ebe3c0843b.jpg"
+                    alt="Avatar Tailwind CSS Component" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">Baldur's Gate 3</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            PC/PS5/Xbox X
+            <br />
+            <span class="badge badge-ghost badge-sm">CRPG</span>
+          </td>
+          <td>2023</td>
+          <th>
+            <button class="btn btn-ghost btn-xs">details</button>
+          </th>
+        </tr>
+        <!-- row 3 -->
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <td>
+            <div class="flex items-center gap-3">
+              <div class="avatar">
+                <div class="mask mask-squircle h-12 w-12">
+                  <img
+                    src="https://cdn.mobygames.com/covers/8842019-persona-5-royal-playstation-4-front-cover.jpg"
+                    alt="Avatar Tailwind CSS Component" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">Persona 5</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            PS4/PS5/PC
+            <br />
+            <span class="badge badge-ghost badge-sm">RPG</span>
+          </td>
+          <td>2016</td>
+          <th>
+            <button class="btn btn-ghost btn-xs">details</button>
+          </th>
+        </tr>
+        <!-- row 4 -->
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <td>
+            <div class="flex items-center gap-3">
+              <div class="avatar">
+                <div class="mask mask-squircle h-12 w-12">
+                  <img
+                    src="https://th.bing.com/th/id/OIP.BBVffnKc9MbNrXavPPoZxwHaEK?rs=1&pid=ImgDetMain"
+                    alt="Avatar Tailwind CSS Component" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">Stardew Valley</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            PC/Switch/Playstation/Xbox
+            <br />
+            <span class="badge badge-ghost badge-sm">Farming Simulator</span>
+          </td>
+          <td>2016</td>
+          <th>
+            <button class="btn btn-ghost btn-xs">details</button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <!-- row 5 -->
+          <td>
+            <div class="flex items-center gap-3">
+              <div class="avatar">
+                <div class="mask mask-squircle h-12 w-12">
+                  <img
+                    src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S1_03_2560x1440-359e77d3cd0a40aebf3bbc130d14c5c7"
+                    alt="Avatar Tailwind CSS Component" />
+                </div>
+              </div>
+              <div>
+                <div class="font-bold">Cyberpunk 2077</div>
+              </div>
+            </div>
+          </td>
+          <td>
+            PC/Playstation/Xbox
+            <br />
+            <span class="badge badge-ghost badge-sm">Action/RPG</span>
+          </td>
+          <td>2020</td>
+          <th>
+            <button class="btn btn-ghost btn-xs">details</button>
+          </th>
+
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+  {% endblock %}
